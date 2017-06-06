@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>1、Demo</string>
+		<key>list</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>【仿小红书】为图片加上带动效的小标签</string>
+				<key>desc</key>
+				<string></string>
+				<key>url</key>
+				<string>taggedImage</string>
+				<key>class</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
