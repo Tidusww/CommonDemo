@@ -17,6 +17,16 @@
 				<key>class</key>
 				<string></string>
 			</dict>
+			<dict>
+				<key>title</key>
+				<string>LumberjackDemo</string>
+				<key>desc</key>
+				<string></string>
+				<key>url</key>
+				<string>LumberjackDemo</string>
+				<key>class</key>
+				<string></string>
+			</dict>
 		</array>
 	</dict>
 </array>

@@ -4,5 +4,7 @@
 <dict>
 	<key>taggedImage</key>
 	<string>TaggedImageViewController</string>
+	<key>LumberjackDemo</key>
+	<string>LumberjackDemoViewController</string>
 </dict>
 </plist>

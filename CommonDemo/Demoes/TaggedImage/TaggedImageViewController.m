@@ -28,7 +28,7 @@
 #pragma mark - lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self.view addSubview:self.markedImageView];
     [self setupSwitcher];
     [self setupTestData];
@@ -37,7 +37,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)setupSwitcher

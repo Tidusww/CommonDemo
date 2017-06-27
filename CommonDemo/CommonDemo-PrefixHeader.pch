@@ -17,5 +17,10 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+#pragma mark - Lumberjack
+#define LOG_LEVEL_DEF ddLogLevel
+//#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#pragma mark - Custom
 #import "WWKit.h"
 #endif
