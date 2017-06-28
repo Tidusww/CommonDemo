@@ -4,7 +4,6 @@ export PATH=/opt/local/bin/:/opt/local/sbin:$PATH:/usr/local/bin:
 #
 # prepare open
 #
-
 convertPath=`which convert`
 gsPath=`which gs`
 
@@ -58,7 +57,6 @@ build_num="${build_num##*( )}"
 shopt -u extglob
 caption="${version} ($build_num)\n${branch}\n${commit}"
 echo $caption
-
 #
 # prepare end
 #
@@ -104,7 +102,7 @@ function processIcon() {
     mv "${stored_original_file}" "${base_path}"
     fi
 
-    if [ $CONFIGURATION = "Release" ]; then
+    if [ $CONFIGURATION = "Release" && $PRODUCT_BUNDLE_IDENTIFIER != "*.inhouse"]; then
     cp "${base_path}" "$target_path"
     echo "CONFIGURATION is Release, return."
     echo "=============processIcon   end============="
@@ -138,8 +136,12 @@ function processIcon() {
     #
     # blur band and text
     #
-    convert ${base_path} -blur 10x8 /tmp/blurred.png
-    convert /tmp/blurred.png -gamma 0 -fill white -draw "rectangle 0,$band_position,$width,$height" /tmp/mask.png
+#    convert ${base_path} -blur 10x8 /tmp/blurred.png
+#    convert /tmp/blurred.png -gamma 0 -fill white -draw "rectangle 0,$band_position,$width,$height" /tmp/mask.png
+    #让ImageMagick自行选择模糊半径
+    convert ${base_path} -blur 0x8 /tmp/blurred.png
+    #用另一种方式创建mask
+    convert -size ${width}x${height} -set colorspace RGB xc:none -fill black -draw "rectangle 0,$band_position,$width,$height" -colorspace sRGB /tmp/mask.png
     convert -size ${width}x${band_height} xc:none -fill 'rgba(0,0,0,0.2)' -draw "rectangle 0,0,$width,$band_height" /tmp/labels-base.png
     convert -background none -size ${width}x${band_height} -pointsize $point_size -fill white -gravity center -gravity South caption:"$caption" /tmp/labels.png
 
@@ -158,6 +160,8 @@ function processIcon() {
     rm /tmp/temp.png
     rm /tmp/labels-base.png
     rm /tmp/labels.png
+
+
 
     echo "Overlayed ${target_path}"
     echo "=============processIcon end============="
@@ -185,10 +189,11 @@ while [  $i -lt $last_icon_index ]; do
     then
         processIcon $icon
     else
-#        processIcon "${icon}.png"
+
+#        processIcon "${icon}.png"#应该不需要再兼容1倍图了
         processIcon "${icon}@2x.png"
         processIcon "${icon}@3x.png"
-
+#       如果是ipad的话用下面这两句
 #        processIcon "${icon}~ipad.png"
 #        processIcon "${icon}@2x~ipad.png"
     fi
