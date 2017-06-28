@@ -55,7 +55,8 @@ fi;
 shopt -s extglob
 build_num="${build_num##*( )}"
 shopt -u extglob
-caption="${version} ($build_num)\n${branch}\n${commit}"
+#caption="${version} ($build_num)\n${branch}\n${commit}"
+caption="\n$build_num\n"
 echo $caption
 #
 # prepare end
@@ -69,6 +70,7 @@ function abspath() { pushd . > /dev/null; if [ -d "$1" ]; then cd "$1"; dirs -l 
 function processIcon() {
     echo "============="
     echo "=============processIcon begin============="
+
     base_file=$1
     echo "icon to be processed:${base_file}"
 
@@ -79,11 +81,12 @@ function processIcon() {
     echo "base path ${real_path}"
 
     if [[ ! -f ${base_path} || -z ${base_path} ]]; then
-    echo "base_path is not a file or is null, return."
-    echo "=============processIcon   end============="
-    echo "============="
-    return;
+        echo "base_path is not a file or is null, return."
+        echo "=============processIcon   end============="
+        echo "============="
+        return;
     fi
+
 
     # TODO: if they are the same we need to fix it by introducing temp
     target_file=`basename $base_path`
@@ -98,16 +101,21 @@ function processIcon() {
 
     stored_original_file="${base_tmp_normalizedFilePath}-tmp"
     if [[ -f ${stored_original_file} ]]; then
-    echo "found previous file at path ${stored_original_file}, using it as base"
-    mv "${stored_original_file}" "${base_path}"
+        echo "found previous file at path ${stored_original_file}, using it as base"
+        mv "${stored_original_file}" "${base_path}"
     fi
 
-    if [ $CONFIGURATION = "Release" && $PRODUCT_BUNDLE_IDENTIFIER != "*.inhouse"]; then
-    cp "${base_path}" "$target_path"
-    echo "CONFIGURATION is Release, return."
-    echo "=============processIcon   end============="
-    echo "============="
-    return 0;
+    if [[ $CONFIGURATION == "Release" ]] && [[ $PRODUCT_BUNDLE_IDENTIFIER != *.inhouse ]]
+    then
+        #只有非inhouse的Release包才使用正常的icon
+        cp "${base_path}" "$target_path"
+        echo "CONFIGURATION is Release, not inhouse app, return."
+        echo "=============processIcon   end============="
+        echo "============="
+        return 0;
+    else
+        echo "CONFIGURATION: $CONFIGURATION"
+        echo "PRODUCT_BUNDLE_IDENTIFIER: $PRODUCT_BUNDLE_IDENTIFIER"
     fi
 
     echo "Reverting optimized PNG to normal"
@@ -160,7 +168,6 @@ function processIcon() {
     rm /tmp/temp.png
     rm /tmp/labels-base.png
     rm /tmp/labels.png
-
 
 
     echo "Overlayed ${target_path}"
