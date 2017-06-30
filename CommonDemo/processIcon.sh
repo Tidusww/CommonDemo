@@ -55,8 +55,20 @@ fi;
 shopt -s extglob
 build_num="${build_num##*( )}"
 shopt -u extglob
+
+product="appstore"
+if [[ $PRODUCT_BUNDLE_IDENTIFIER == *.inhouse ]]
+then
+product="inhouse"
+fi
+if [[ $PRODUCT_BUNDLE_IDENTIFIER == *.adhoc ]]
+then
+product="adhoc"
+fi
+
+
 #caption="${version} ($build_num)\n${branch}\n${commit}"
-caption="\n$build_num\n"
+caption="$build_num\n$product\n"
 echo $caption
 #
 # prepare end
@@ -105,9 +117,9 @@ function processIcon() {
         mv "${stored_original_file}" "${base_path}"
     fi
 
-    if [[ $CONFIGURATION == "Release" ]] && [[ $PRODUCT_BUNDLE_IDENTIFIER != *.inhouse ]]
+    if [[ $CONFIGURATION == "Release" ]] && [[ $PRODUCT_BUNDLE_IDENTIFIER != *.inhouse ]] && [[ $PRODUCT_BUNDLE_IDENTIFIER != *.adhoc ]]
     then
-        #只有非inhouse的Release包才使用正常的icon
+        #只有appstore的Release包才使用正常的icon
         cp "${base_path}" "$target_path"
         echo "CONFIGURATION is Release, not inhouse app, return."
         echo "=============processIcon   end============="
