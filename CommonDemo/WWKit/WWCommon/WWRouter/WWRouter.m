@@ -59,7 +59,7 @@ static NSDictionary *urlMap = nil;
 }
 
 #pragma mark - <#mark#>
-+ (UITabBarController *)tabBarController
++ (UITabBarController *)rootTabBarController
 {
     WWBaseAppDelegate *delegate = [WWBaseAppDelegate sharedAppDelegate];
     UITabBarController *tabBarController = [delegate tabBarController];

@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationBar.translucent = NO;
+//    self.navigationBar.translucent = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,13 +25,5 @@
     
 }
 
-#pragma mark - getter
-
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    [super pushViewController:viewController animated:YES];
-    
-    
-}
 
 @end

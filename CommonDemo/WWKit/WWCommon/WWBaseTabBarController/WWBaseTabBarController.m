@@ -9,7 +9,7 @@
 #import "WWBaseTabBarController.h"
 
 NSString * const kWWBaseTabBarControllerRootKey = @"root-controllers";
-NSString * const kWWBaseTabBarControllerConfiguration = @"WWTabBarConfiguration";
+NSString * const kWWBaseTabBarControllerConfiguration = @"WWBaseTabBarConfiguration";
 NSString * const kWWBaseTabBarControllerConfigurationKeyTitle = @"title";
 NSString * const kWWBaseTabBarControllerConfigurationKeyImage = @"image";
 NSString * const kWWBaseTabBarControllerConfigurationKeySelectedImage = @"selectedImage";
@@ -32,6 +32,8 @@ NSString * const kWWBaseTabBarControllerConfigurationKeySelectedImage = @"select
         self.delegate = self;
         self.selectedIndex = 0;
         
+        
+        
     }
     return self;
 }
@@ -39,7 +41,7 @@ NSString * const kWWBaseTabBarControllerConfigurationKeySelectedImage = @"select
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[UITabBar appearance] setBarTintColor:Color(248, 248, 255, 1)];
+    [[UITabBar appearance] setBarTintColor:TAB_BAR_TINT_COLOR];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -78,8 +80,8 @@ NSString * const kWWBaseTabBarControllerConfigurationKeySelectedImage = @"select
                 nav.tabBarItem.title = title;
                 nav.tabBarItem.image = [[UIImage imageNamed:image] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
                 nav.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-                [nav.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:Color(102, 102, 102, 1),NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
-                [nav.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:Color(59, 149, 232, 1),NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+                [nav.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:TAB_BAR_UNSELECT_COLOR,NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+                [nav.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:TAB_BAR_SELECTED_COLOR,NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
             }
             
             [rootViewControllers addObject:nav];

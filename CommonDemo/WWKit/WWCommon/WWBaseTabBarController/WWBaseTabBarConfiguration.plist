@@ -4,11 +4,11 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>服务</string>
+		<string>demoes</string>
 		<key>image</key>
-		<string>bottom_icon01_grey</string>
+		<string>tab_bar_icon1</string>
 		<key>selectedImage</key>
-		<string>bottom_icon01_blue</string>
+		<string>tab_bar_icon1_x</string>
 	</dict>
 </array>
 </plist>

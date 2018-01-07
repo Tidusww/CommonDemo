@@ -10,7 +10,6 @@
 		351E01BA1EA0CEC000020780 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E01B91EA0CEC000020780 /* main.m */; };
 		351E01BD1EA0CEC000020780 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E01BC1EA0CEC000020780 /* AppDelegate.m */; };
 		351E01C31EA0CEC000020780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351E01C11EA0CEC000020780 /* Main.storyboard */; };
-		351E01C51EA0CEC000020780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351E01C41EA0CEC000020780 /* Assets.xcassets */; };
 		351E01C81EA0CEC000020780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351E01C61EA0CEC000020780 /* LaunchScreen.storyboard */; };
 		351E01D31EA0CEC000020780 /* CommonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E01D21EA0CEC000020780 /* CommonDemoTests.m */; };
 		351E020C1EA0D4B700020780 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E02091EA0D4B700020780 /* RootTableViewController.m */; };
@@ -28,6 +27,7 @@
 		3574805C1FFF8F5D00F9D95C /* NSArray+WWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 357480571FFF8F5D00F9D95C /* NSArray+WWExtension.m */; };
 		3574805D1FFF8F5D00F9D95C /* NSDictionary+WWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 357480591FFF8F5D00F9D95C /* NSDictionary+WWExtension.m */; };
 		3574805E1FFF8F5D00F9D95C /* NSString+WWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574805B1FFF8F5D00F9D95C /* NSString+WWExtension.m */; };
+		357480672001CC2700F9D95C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 357480662001CC2700F9D95C /* Assets.xcassets */; };
 		35883F011EFD13D0008EBB1D /* LumberjackDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35883F001EFD13D0008EBB1D /* LumberjackDemoViewController.m */; };
 		35883F1A1F024243008EBB1D /* processIcon.sh in Resources */ = {isa = PBXBuildFile; fileRef = 35883F191F024243008EBB1D /* processIcon.sh */; };
 		35DF5E811EE6B32F00E46D90 /* UITableView+WWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF5E7E1EE6B32F00E46D90 /* UITableView+WWExtension.m */; };
@@ -58,7 +58,6 @@
 		351E01BB1EA0CEC000020780 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		351E01BC1EA0CEC000020780 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		351E01C21EA0CEC000020780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		351E01C41EA0CEC000020780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CommonDemo/Assets.xcassets; sourceTree = "<group>"; };
 		351E01C71EA0CEC000020780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		351E01C91EA0CEC000020780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		351E01CE1EA0CEC000020780 /* CommonDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +101,7 @@
 		357480591FFF8F5D00F9D95C /* NSDictionary+WWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WWExtension.m"; sourceTree = "<group>"; };
 		3574805A1FFF8F5D00F9D95C /* NSString+WWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WWExtension.h"; sourceTree = "<group>"; };
 		3574805B1FFF8F5D00F9D95C /* NSString+WWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WWExtension.m"; sourceTree = "<group>"; };
+		357480662001CC2700F9D95C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CommonDemo/Assets.xcassets; sourceTree = "<group>"; };
 		35883EFF1EFD13D0008EBB1D /* LumberjackDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberjackDemoViewController.h; sourceTree = "<group>"; };
 		35883F001EFD13D0008EBB1D /* LumberjackDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackDemoViewController.m; sourceTree = "<group>"; };
 		35883F191F024243008EBB1D /* processIcon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = processIcon.sh; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		351E01AC1EA0CEC000020780 = {
 			isa = PBXGroup;
 			children = (
-				351E01C41EA0CEC000020780 /* Assets.xcassets */,
+				357480662001CC2700F9D95C /* Assets.xcassets */,
 				351E01B71EA0CEC000020780 /* CommonDemo */,
 				351E01B81EA0CEC000020780 /* Supporting Files */,
 				351E01D11EA0CEC000020780 /* CommonDemoTests */,
@@ -524,11 +524,11 @@
 				351E01C81EA0CEC000020780 /* LaunchScreen.storyboard in Resources */,
 				351E020E1EA0D4F800020780 /* menu.plist in Resources */,
 				3574804C1FFF8BE700F9D95C /* WWBaseTabBarConfiguration.plist in Resources */,
-				351E01C51EA0CEC000020780 /* Assets.xcassets in Resources */,
 				35DF5E951EE6B4F300E46D90 /* TagViewStyle.plist in Resources */,
 				351E01C31EA0CEC000020780 /* Main.storyboard in Resources */,
 				35DF5E991EE6B4F300E46D90 /* TagBuilderView.xib in Resources */,
 				35883F1A1F024243008EBB1D /* processIcon.sh in Resources */,
+				357480672001CC2700F9D95C /* Assets.xcassets in Resources */,
 				357480351FFF878000F9D95C /* WWRouter.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

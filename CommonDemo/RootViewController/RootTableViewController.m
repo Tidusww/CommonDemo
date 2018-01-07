@@ -27,7 +27,6 @@ static NSString *const kTableViewHeaderReuseID = @"kTableViewHeaderReuseID";
 {
     [super loadView];
     [self.view addSubview:self.tableView];
-    
 }
 
 - (void)viewDidLoad
@@ -38,14 +37,14 @@ static NSString *const kTableViewHeaderReuseID = @"kTableViewHeaderReuseID";
 #pragma mark - layout
 - (void)viewDidLayoutSubviews
 {
-    self.tableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-STATUS_BAR_HEIGHT-NAVIGATION_BAR_HEIGHT);
+    self.tableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-STATUS_BAR_HEIGHT-NAVIGATION_BAR_HEIGHT-TAB_BAR_HEIGHT);
 }
 
 #pragma mark - getter
 - (UITableView *)tableView
 {
     if(!_tableView){
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-STATUS_BAR_HEIGHT-NAVIGATION_BAR_HEIGHT)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-STATUS_BAR_HEIGHT-NAVIGATION_BAR_HEIGHT-TAB_BAR_HEIGHT)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [_tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:kTableViewHeaderReuseID];

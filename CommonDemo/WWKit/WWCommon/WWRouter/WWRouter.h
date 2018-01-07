@@ -31,7 +31,7 @@
 + (BOOL)openUrlInSafari:(NSString *)openUrl;
 
 
-+ (UITabBarController *)tabBarController;
++ (UITabBarController *)rootTabBarController;
 + (UINavigationController *)topNavigationController;
 
 @end
