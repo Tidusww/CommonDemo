@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootTableViewController : UIViewController
+@interface RootTableViewController : WWBaseViewController
 
 
 @end

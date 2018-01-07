@@ -16,7 +16,7 @@
 @implementation WWBaseViewController
 
 #pragma mark - WWRouterProtocol
-- (UIViewController *)initForRouteWithUrl:(NSString *)url withParam:(NSDictionary *)param;
+- (UIViewController *)initForRouterWithUrl:(NSString *)url param:(NSDictionary *)param;
 {
     //初始化
     self = [super init];

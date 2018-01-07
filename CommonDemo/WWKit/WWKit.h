@@ -9,8 +9,14 @@
 #ifndef WWKit_h
 #define WWKit_h
 
+#import "UIMacro.h"
+#import "GeneralMacro.h"
+#import "GeneralConfig.h"
+
 #import "WWCore.h"
+
+#import "WWCommon.h"
+
 #import "WWUIKit.h"
-#import "WWUIMacro.h"
 
 #endif /* WWKit_h */

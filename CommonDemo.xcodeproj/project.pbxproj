@@ -15,12 +15,19 @@
 		351E01D31EA0CEC000020780 /* CommonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E01D21EA0CEC000020780 /* CommonDemoTests.m */; };
 		351E020C1EA0D4B700020780 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E02091EA0D4B700020780 /* RootTableViewController.m */; };
 		351E020E1EA0D4F800020780 /* menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 351E020D1EA0D4F800020780 /* menu.plist */; };
-		351E023B1EA0D55700020780 /* WWBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E02161EA0D55700020780 /* WWBaseAppDelegate.m */; };
-		351E023C1EA0D55700020780 /* WWBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E02191EA0D55700020780 /* WWBaseNavigationController.m */; };
-		351E023D1EA0D55700020780 /* WWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E021D1EA0D55700020780 /* WWBaseViewController.m */; };
-		351E023E1EA0D55700020780 /* WWRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E02221EA0D55700020780 /* WWRouter.m */; };
-		351E023F1EA0D55700020780 /* WWRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 351E02231EA0D55700020780 /* WWRouter.plist */; };
 		351E02441EA0D55700020780 /* UIView+WWView.m in Sources */ = {isa = PBXBuildFile; fileRef = 351E02381EA0D55700020780 /* UIView+WWView.m */; };
+		357480331FFF878000F9D95C /* WWPrivacyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 357480261FFF878000F9D95C /* WWPrivacyHelper.m */; };
+		357480341FFF878000F9D95C /* WWRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 357480291FFF878000F9D95C /* WWRouter.m */; };
+		357480351FFF878000F9D95C /* WWRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3574802A1FFF878000F9D95C /* WWRouter.plist */; };
+		357480411FFF89C900F9D95C /* WWBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574803D1FFF89C900F9D95C /* WWBaseNavigationController.m */; };
+		357480421FFF89C900F9D95C /* WWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357480401FFF89C900F9D95C /* WWBaseViewController.m */; };
+		357480471FFF8B8700F9D95C /* WWBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 357480461FFF8B8700F9D95C /* WWBaseAppDelegate.m */; };
+		3574804C1FFF8BE700F9D95C /* WWBaseTabBarConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 357480491FFF8BE700F9D95C /* WWBaseTabBarConfiguration.plist */; };
+		3574804D1FFF8BE700F9D95C /* WWBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574804B1FFF8BE700F9D95C /* WWBaseTabBarController.m */; };
+		3574804F1FFF8CA900F9D95C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3574804E1FFF8CA900F9D95C /* CoreLocation.framework */; };
+		3574805C1FFF8F5D00F9D95C /* NSArray+WWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 357480571FFF8F5D00F9D95C /* NSArray+WWExtension.m */; };
+		3574805D1FFF8F5D00F9D95C /* NSDictionary+WWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 357480591FFF8F5D00F9D95C /* NSDictionary+WWExtension.m */; };
+		3574805E1FFF8F5D00F9D95C /* NSString+WWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574805B1FFF8F5D00F9D95C /* NSString+WWExtension.m */; };
 		35883F011EFD13D0008EBB1D /* LumberjackDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35883F001EFD13D0008EBB1D /* LumberjackDemoViewController.m */; };
 		35883F1A1F024243008EBB1D /* processIcon.sh in Resources */ = {isa = PBXBuildFile; fileRef = 35883F191F024243008EBB1D /* processIcon.sh */; };
 		35DF5E811EE6B32F00E46D90 /* UITableView+WWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF5E7E1EE6B32F00E46D90 /* UITableView+WWExtension.m */; };
@@ -65,21 +72,36 @@
 		351E02081EA0D4B700020780 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
 		351E02091EA0D4B700020780 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		351E020D1EA0D4F800020780 /* menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menu.plist; sourceTree = "<group>"; };
-		351E02151EA0D55700020780 /* WWBaseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBaseAppDelegate.h; sourceTree = "<group>"; };
-		351E02161EA0D55700020780 /* WWBaseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBaseAppDelegate.m; sourceTree = "<group>"; };
-		351E02181EA0D55700020780 /* WWBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBaseNavigationController.h; sourceTree = "<group>"; };
-		351E02191EA0D55700020780 /* WWBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBaseNavigationController.m; sourceTree = "<group>"; };
-		351E021C1EA0D55700020780 /* WWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBaseViewController.h; sourceTree = "<group>"; };
-		351E021D1EA0D55700020780 /* WWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBaseViewController.m; sourceTree = "<group>"; };
 		351E021E1EA0D55700020780 /* WWCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCore.h; sourceTree = "<group>"; };
-		351E02211EA0D55700020780 /* WWRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWRouter.h; sourceTree = "<group>"; };
-		351E02221EA0D55700020780 /* WWRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWRouter.m; sourceTree = "<group>"; };
-		351E02231EA0D55700020780 /* WWRouter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WWRouter.plist; sourceTree = "<group>"; };
 		351E02261EA0D55700020780 /* WWKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWKit.h; sourceTree = "<group>"; };
 		351E02371EA0D55700020780 /* UIView+WWView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WWView.h"; sourceTree = "<group>"; };
 		351E02381EA0D55700020780 /* UIView+WWView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WWView.m"; sourceTree = "<group>"; };
 		351E02391EA0D55700020780 /* WWUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWUIKit.h; sourceTree = "<group>"; };
-		351E02461EA0D99400020780 /* WWUIMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWUIMacro.h; sourceTree = "<group>"; };
+		3574801F1FFF847B00F9D95C /* UIMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMacro.h; sourceTree = "<group>"; };
+		357480251FFF878000F9D95C /* WWPrivacyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPrivacyHelper.h; sourceTree = "<group>"; };
+		357480261FFF878000F9D95C /* WWPrivacyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPrivacyHelper.m; sourceTree = "<group>"; };
+		357480281FFF878000F9D95C /* WWRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWRouter.h; sourceTree = "<group>"; };
+		357480291FFF878000F9D95C /* WWRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WWRouter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3574802A1FFF878000F9D95C /* WWRouter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WWRouter.plist; sourceTree = "<group>"; };
+		3574803C1FFF89C900F9D95C /* WWBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBaseNavigationController.h; sourceTree = "<group>"; };
+		3574803D1FFF89C900F9D95C /* WWBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBaseNavigationController.m; sourceTree = "<group>"; };
+		3574803F1FFF89C900F9D95C /* WWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBaseViewController.h; sourceTree = "<group>"; };
+		357480401FFF89C900F9D95C /* WWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBaseViewController.m; sourceTree = "<group>"; };
+		357480431FFF8AC600F9D95C /* WWCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWCommon.h; sourceTree = "<group>"; };
+		357480451FFF8B8700F9D95C /* WWBaseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBaseAppDelegate.h; sourceTree = "<group>"; };
+		357480461FFF8B8700F9D95C /* WWBaseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBaseAppDelegate.m; sourceTree = "<group>"; };
+		357480491FFF8BE700F9D95C /* WWBaseTabBarConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WWBaseTabBarConfiguration.plist; sourceTree = "<group>"; };
+		3574804A1FFF8BE700F9D95C /* WWBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWBaseTabBarController.h; sourceTree = "<group>"; };
+		3574804B1FFF8BE700F9D95C /* WWBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWBaseTabBarController.m; sourceTree = "<group>"; };
+		3574804E1FFF8CA900F9D95C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		357480501FFF8D0100F9D95C /* GeneralConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralConfig.h; sourceTree = "<group>"; };
+		357480511FFF8D0100F9D95C /* GeneralMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralMacro.h; sourceTree = "<group>"; };
+		357480561FFF8F5D00F9D95C /* NSArray+WWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WWExtension.h"; sourceTree = "<group>"; };
+		357480571FFF8F5D00F9D95C /* NSArray+WWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WWExtension.m"; sourceTree = "<group>"; };
+		357480581FFF8F5D00F9D95C /* NSDictionary+WWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WWExtension.h"; sourceTree = "<group>"; };
+		357480591FFF8F5D00F9D95C /* NSDictionary+WWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WWExtension.m"; sourceTree = "<group>"; };
+		3574805A1FFF8F5D00F9D95C /* NSString+WWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WWExtension.h"; sourceTree = "<group>"; };
+		3574805B1FFF8F5D00F9D95C /* NSString+WWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WWExtension.m"; sourceTree = "<group>"; };
 		35883EFF1EFD13D0008EBB1D /* LumberjackDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberjackDemoViewController.h; sourceTree = "<group>"; };
 		35883F001EFD13D0008EBB1D /* LumberjackDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackDemoViewController.m; sourceTree = "<group>"; };
 		35883F191F024243008EBB1D /* processIcon.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = processIcon.sh; sourceTree = "<group>"; };
@@ -110,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3574804F1FFF8CA900F9D95C /* CoreLocation.framework in Frameworks */,
 				6354395672EF306C680CC960 /* libPods-CommonDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,8 +228,9 @@
 			isa = PBXGroup;
 			children = (
 				351E02261EA0D55700020780 /* WWKit.h */,
-				351E02451EA0D99400020780 /* WWMacro */,
+				3574801E1FFF847B00F9D95C /* WWMacro */,
 				351E02101EA0D55700020780 /* WWCoreKit */,
+				357480201FFF878000F9D95C /* WWCommon */,
 				351E022E1EA0D55700020780 /* WWUIKit */,
 			);
 			path = WWKit;
@@ -216,49 +240,9 @@
 			isa = PBXGroup;
 			children = (
 				351E021E1EA0D55700020780 /* WWCore.h */,
-				351E02141EA0D55700020780 /* WWBaseAppDelegate */,
-				351E02171EA0D55700020780 /* WWBaseNavigationController */,
-				351E021B1EA0D55700020780 /* WWBaseViewController */,
-				351E02201EA0D55700020780 /* WWRouter */,
+				357480551FFF8F5D00F9D95C /* WWFoundation */,
 			);
 			path = WWCoreKit;
-			sourceTree = "<group>";
-		};
-		351E02141EA0D55700020780 /* WWBaseAppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				351E02151EA0D55700020780 /* WWBaseAppDelegate.h */,
-				351E02161EA0D55700020780 /* WWBaseAppDelegate.m */,
-			);
-			path = WWBaseAppDelegate;
-			sourceTree = "<group>";
-		};
-		351E02171EA0D55700020780 /* WWBaseNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				351E02181EA0D55700020780 /* WWBaseNavigationController.h */,
-				351E02191EA0D55700020780 /* WWBaseNavigationController.m */,
-			);
-			path = WWBaseNavigationController;
-			sourceTree = "<group>";
-		};
-		351E021B1EA0D55700020780 /* WWBaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				351E021C1EA0D55700020780 /* WWBaseViewController.h */,
-				351E021D1EA0D55700020780 /* WWBaseViewController.m */,
-			);
-			path = WWBaseViewController;
-			sourceTree = "<group>";
-		};
-		351E02201EA0D55700020780 /* WWRouter */ = {
-			isa = PBXGroup;
-			children = (
-				351E02211EA0D55700020780 /* WWRouter.h */,
-				351E02221EA0D55700020780 /* WWRouter.m */,
-				351E02231EA0D55700020780 /* WWRouter.plist */,
-			);
-			path = WWRouter;
 			sourceTree = "<group>";
 		};
 		351E022E1EA0D55700020780 /* WWUIKit */ = {
@@ -279,12 +263,97 @@
 			path = WWUICategory;
 			sourceTree = "<group>";
 		};
-		351E02451EA0D99400020780 /* WWMacro */ = {
+		3574801E1FFF847B00F9D95C /* WWMacro */ = {
 			isa = PBXGroup;
 			children = (
-				351E02461EA0D99400020780 /* WWUIMacro.h */,
+				357480501FFF8D0100F9D95C /* GeneralConfig.h */,
+				357480511FFF8D0100F9D95C /* GeneralMacro.h */,
+				3574801F1FFF847B00F9D95C /* UIMacro.h */,
 			);
 			path = WWMacro;
+			sourceTree = "<group>";
+		};
+		357480201FFF878000F9D95C /* WWCommon */ = {
+			isa = PBXGroup;
+			children = (
+				357480431FFF8AC600F9D95C /* WWCommon.h */,
+				357480441FFF8B8700F9D95C /* WWBaseAppDelegate */,
+				357480481FFF8BE700F9D95C /* WWBaseTabBarController */,
+				3574803B1FFF89C900F9D95C /* WWBaseNavigationController */,
+				3574803E1FFF89C900F9D95C /* WWBaseViewController */,
+				357480271FFF878000F9D95C /* WWRouter */,
+				357480241FFF878000F9D95C /* WWPrivacyHelper */,
+			);
+			path = WWCommon;
+			sourceTree = "<group>";
+		};
+		357480241FFF878000F9D95C /* WWPrivacyHelper */ = {
+			isa = PBXGroup;
+			children = (
+				357480251FFF878000F9D95C /* WWPrivacyHelper.h */,
+				357480261FFF878000F9D95C /* WWPrivacyHelper.m */,
+			);
+			path = WWPrivacyHelper;
+			sourceTree = "<group>";
+		};
+		357480271FFF878000F9D95C /* WWRouter */ = {
+			isa = PBXGroup;
+			children = (
+				357480281FFF878000F9D95C /* WWRouter.h */,
+				357480291FFF878000F9D95C /* WWRouter.m */,
+				3574802A1FFF878000F9D95C /* WWRouter.plist */,
+			);
+			path = WWRouter;
+			sourceTree = "<group>";
+		};
+		3574803B1FFF89C900F9D95C /* WWBaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				3574803C1FFF89C900F9D95C /* WWBaseNavigationController.h */,
+				3574803D1FFF89C900F9D95C /* WWBaseNavigationController.m */,
+			);
+			path = WWBaseNavigationController;
+			sourceTree = "<group>";
+		};
+		3574803E1FFF89C900F9D95C /* WWBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3574803F1FFF89C900F9D95C /* WWBaseViewController.h */,
+				357480401FFF89C900F9D95C /* WWBaseViewController.m */,
+			);
+			path = WWBaseViewController;
+			sourceTree = "<group>";
+		};
+		357480441FFF8B8700F9D95C /* WWBaseAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				357480451FFF8B8700F9D95C /* WWBaseAppDelegate.h */,
+				357480461FFF8B8700F9D95C /* WWBaseAppDelegate.m */,
+			);
+			path = WWBaseAppDelegate;
+			sourceTree = "<group>";
+		};
+		357480481FFF8BE700F9D95C /* WWBaseTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				3574804A1FFF8BE700F9D95C /* WWBaseTabBarController.h */,
+				3574804B1FFF8BE700F9D95C /* WWBaseTabBarController.m */,
+				357480491FFF8BE700F9D95C /* WWBaseTabBarConfiguration.plist */,
+			);
+			path = WWBaseTabBarController;
+			sourceTree = "<group>";
+		};
+		357480551FFF8F5D00F9D95C /* WWFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				357480581FFF8F5D00F9D95C /* NSDictionary+WWExtension.h */,
+				357480591FFF8F5D00F9D95C /* NSDictionary+WWExtension.m */,
+				357480561FFF8F5D00F9D95C /* NSArray+WWExtension.h */,
+				357480571FFF8F5D00F9D95C /* NSArray+WWExtension.m */,
+				3574805A1FFF8F5D00F9D95C /* NSString+WWExtension.h */,
+				3574805B1FFF8F5D00F9D95C /* NSString+WWExtension.m */,
+			);
+			path = WWFoundation;
 			sourceTree = "<group>";
 		};
 		35883EFE1EFD13AE008EBB1D /* LumberjackDemo */ = {
@@ -355,6 +424,7 @@
 		686D699AF71B675D5E6A4CD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3574804E1FFF8CA900F9D95C /* CoreLocation.framework */,
 				351E01FC1EA0D1BF00020780 /* CoreGraphics.framework */,
 				351E01FA1EA0D1B200020780 /* Accelerate.framework */,
 				351E01F81EA0D17200020780 /* Foundation.framework */,
@@ -452,13 +522,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				351E01C81EA0CEC000020780 /* LaunchScreen.storyboard in Resources */,
-				351E023F1EA0D55700020780 /* WWRouter.plist in Resources */,
 				351E020E1EA0D4F800020780 /* menu.plist in Resources */,
+				3574804C1FFF8BE700F9D95C /* WWBaseTabBarConfiguration.plist in Resources */,
 				351E01C51EA0CEC000020780 /* Assets.xcassets in Resources */,
 				35DF5E951EE6B4F300E46D90 /* TagViewStyle.plist in Resources */,
 				351E01C31EA0CEC000020780 /* Main.storyboard in Resources */,
 				35DF5E991EE6B4F300E46D90 /* TagBuilderView.xib in Resources */,
 				35883F1A1F024243008EBB1D /* processIcon.sh in Resources */,
+				357480351FFF878000F9D95C /* WWRouter.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,13 +578,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F84C5231EF1E5190C091CC04 /* [CP] Copy Pods Resources */ = {
@@ -541,19 +615,24 @@
 				351E020C1EA0D4B700020780 /* RootTableViewController.m in Sources */,
 				35DF5E981EE6B4F300E46D90 /* TagBuilderView.m in Sources */,
 				351E01BD1EA0CEC000020780 /* AppDelegate.m in Sources */,
-				351E023B1EA0D55700020780 /* WWBaseAppDelegate.m in Sources */,
+				357480341FFF878000F9D95C /* WWRouter.m in Sources */,
 				351E02441EA0D55700020780 /* UIView+WWView.m in Sources */,
 				35DF5E941EE6B4F300E46D90 /* TagViewModel.m in Sources */,
+				3574805D1FFF8F5D00F9D95C /* NSDictionary+WWExtension.m in Sources */,
+				357480471FFF8B8700F9D95C /* WWBaseAppDelegate.m in Sources */,
 				35DF5E9A1EE6B4F300E46D90 /* TagView.m in Sources */,
-				351E023E1EA0D55700020780 /* WWRouter.m in Sources */,
-				351E023D1EA0D55700020780 /* WWBaseViewController.m in Sources */,
-				351E023C1EA0D55700020780 /* WWBaseNavigationController.m in Sources */,
 				35DF5E961EE6B4F300E46D90 /* TaggedImageViewController.m in Sources */,
 				35DF5E971EE6B4F300E46D90 /* MarkedImageView.m in Sources */,
+				357480411FFF89C900F9D95C /* WWBaseNavigationController.m in Sources */,
 				35DF5E811EE6B32F00E46D90 /* UITableView+WWExtension.m in Sources */,
+				357480421FFF89C900F9D95C /* WWBaseViewController.m in Sources */,
 				35883F011EFD13D0008EBB1D /* LumberjackDemoViewController.m in Sources */,
+				3574804D1FFF8BE700F9D95C /* WWBaseTabBarController.m in Sources */,
+				3574805E1FFF8F5D00F9D95C /* NSString+WWExtension.m in Sources */,
 				35DF5E931EE6B4F300E46D90 /* TagModel.m in Sources */,
+				357480331FFF878000F9D95C /* WWPrivacyHelper.m in Sources */,
 				351E01BA1EA0CEC000020780 /* main.m in Sources */,
+				3574805C1FFF8F5D00F9D95C /* NSArray+WWExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
