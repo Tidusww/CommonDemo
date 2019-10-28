@@ -29,7 +29,7 @@
 - (void)setRootTab
 {
     //初始化分栏控制器
-    NSArray *rootViewControllers = @[@"RootTableViewController"];
+    NSArray *rootViewControllers = @[@"DemoesTableViewController", @"ReactNativeViewController"];
     
     NSDictionary *config = @{kWWBaseTabBarControllerRootKey:rootViewControllers};
     WWBaseTabBarController *tabBarController = [[WWBaseTabBarController alloc] initWithConfig:config];
